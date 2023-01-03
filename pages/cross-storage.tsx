@@ -29,4 +29,10 @@ export async function getServerSideProps() {
 
 export default HubPage
 
+class CrossStorageHub {
+    static init(allowedOrigins: any) {
+        console.log('init');
+    }
+}
+
 
