@@ -12,7 +12,7 @@ const HubPage: NextPage = () => {
 
         <Script id='fa' src="https://cd-hub.vercel.app/js/hub.js" onReady={() => {
             CrossStorageHub.init([
-                {origin: /.*/, allow: ['get', 'set', 'del']}
+                {origin: /:\/\/(https\.)?beto-beto-salamander.$/, allow: ['get', 'set', 'del']}
               ]);
             
         }}>
