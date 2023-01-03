@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Script from 'next/script';
+import CrossStorageHub from '../public/js/hub'
 
 interface CallbackParameter {
     onSuccess: (idToken: string) => void
@@ -10,9 +11,10 @@ const HubPage: NextPage = () => {
     return <>
         <div id='pass3-signin-button'>Login with PASS3</div>
 
-        <Script id='fa' src="https://cd-hub.vercel.app/js/hub.js" onReady={() => {
+        <Script id='fa' src="../js/hub.js" onReady={() => {
             CrossStorageHub.init([
-                {origin: /:\/\/(https\.)?beto-beto-salamander.$/, allow: ['get', 'set', 'del']}
+                // {origin: /:\/\/(https\.)?beto-beto-salamander.$/, allow: ['get', 'set', 'del']}
+                {origin: /.*beto-beto-salamander*/, allow: ['get', 'set', 'del']}
               ]);
             
         }}>
@@ -29,11 +31,11 @@ export async function getServerSideProps() {
 
 export default HubPage
 
-class CrossStorageHub {
-    static init(allowedOrigins: any) {
+// class CrossStorageHub {
+//     static init(allowedOrigins: any) {
 
-        console.log(allowedOrigins);
-    }
-}
+//         console.log(allowedOrigins);
+//     }
+// }
 
 
