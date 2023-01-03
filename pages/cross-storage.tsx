@@ -10,7 +10,7 @@ const HubPage: NextPage = () => {
     return <>
         <div id='pass3-signin-button'>Login with PASS3</div>
 
-        <Script id='fa' src="../public/js/hub.js" onReady={() => {
+        <Script id='fa' src="/public/js/hub.js" onReady={() => {
             CrossStorageHub.init([
                 {origin: /.*/, allow: ['get', 'set', 'del']}
               ]);
