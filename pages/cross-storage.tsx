@@ -12,7 +12,7 @@ const HubPage: NextPage = () => {
 
         <Script id='fa' src="/js/hub.js" onReady={() => {
             CrossStorageHub.init([
-                {origin: /\.beto-beto-salamander.github.io$/, allow: ['get', 'set', 'del']}
+                {origin: "https://beto-beto-salamander.github.io/example/client1.html", allow: ['get', 'set', 'del']}
               ]);
             
         }}>
