@@ -1,0 +1,115 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+html {
+  color-scheme: dark;
+}
+
+body {
+  color: white;
+  background: #042033;
+}
+
+/* } */
+
+
+button {
+  padding: 1. 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ////////////////// */
+
+.qr-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.qr-wrapper h2 {
+  margin-bottom: 18px;
+}
+
+.qr-wrapper p {
+  margin-bottom: 42px;
+  font-size: 14px;
+}
+
+.platform-box {
+  background-color: #0A293E;
+  padding: 16px 32px;
+  border-radius: 8px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+}
+
+.platform-box span {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.platform-box__button-box {
+  display: flex;
+  gap: 18px;
+}
+
+
+.error-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-box span {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+
+.error-box p {
+  font-size: 14px;
+}
+
+.error-box button,
+.button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  width: 280px;
+  background-color: #0D94CE;
+  margin-top: 22px;
+  color: #fff;
+}

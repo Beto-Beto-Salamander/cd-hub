@@ -1,0 +1,13 @@
+{
+    "error.header": "Terjadi Kesalahan",
+    "error.message.not_empty": "tidak boleh kosong",
+    "page.oauth.authorize.button.back": "Kembali ke halaman sebelumya",
+    "page.oauth.authorize.error.invalid_client": "client tidak valid",
+    "page.oauth.authorize.error.declined": "Authorization dicancel oleh user",
+    "page.oauth.authorize.error.invalid_request": "request tidak valid",
+    "page.oauth.authorize.error.invalid_identifier": "identifier tidak valid",
+    "page.oauth.authorize.error.invalid_credential": "credential tidak valid",
+    "page.oauth.authorize.error.expired": "sudah expired",
+    "page.oauth.authorize.error.server_error": "Terjadi Kesalahan pada Server",
+    "page.oauth.authorize.error.default": "Coba lagi dalam beberapa saat"
+}

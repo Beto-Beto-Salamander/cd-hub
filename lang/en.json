@@ -1,0 +1,13 @@
+{
+    "error.header": "Something went wrong",
+    "error.message.notEmpty": "must be defined",
+    "page.oauth.authorize.button.back": "Back to Previous Page",
+    "page.oauth.authorize.error.invalid_client": "Invalid Client",
+    "page.oauth.authorize.error.declined": "Authorization declined by user",
+    "page.oauth.authorize.error.invalid_request": "Invalid Request",
+    "page.oauth.authorize.error.invalid_identifier": "Invalid Identifier",
+    "page.oauth.authorize.error.invalid_credential": "Invalid Credential",
+    "page.oauth.authorize.error.expired": "Authorization process is expired",
+    "page.oauth.authorize.error.server_error": "Server Error",
+    "page.oauth.authorize.error.default": "Try Again Later"
+}
