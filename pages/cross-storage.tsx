@@ -22,7 +22,7 @@ const HubPage: NextPage = () => {
 }
 
 export async function getServerSideProps(context : any) {
-    console.log(context);
+    console.log("IINI CONTEXT",context);
     return {
       props: {}, 
     }
