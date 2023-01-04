@@ -1,6 +1,7 @@
 
-var createGuest = require("cross-domain-storage/guest");
-var createHost = require("cross-domain-storage/host");
+import createGuest from "cross-domain-storage/guest";
+import createHost from "cross-domain-storage/host";
+
 var storageHost = createHost([
   {
     origin: "http://beto-beto-salamander.github.io",
