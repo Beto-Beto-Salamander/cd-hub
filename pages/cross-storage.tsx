@@ -13,7 +13,7 @@ const HubPage: NextPage = () => {
 
         <Script id='fa' src="../js/hub.js" onReady={() => {
             CrossStorageHub.init([
-                
+                {origin: /https:\/\/beto-beto-salamander.github.io/, allow: ['get', 'set', 'del']},
               ]);
             
         }}>
@@ -21,10 +21,10 @@ const HubPage: NextPage = () => {
     </>
 }
 
-export async function getServerSideProps() {
-    console.log('abc');
+export async function getServerSideProps(context : any) {
+    console.log(context);
     return {
-      props: {}, // will be passed to the page component as props
+      props: {}, 
     }
   }
 
