@@ -4,15 +4,15 @@ CustomLocalStorage.set = function (key, value) {
     window.localStorage.setItem(key, value);
 }
 
-CustomLocalStorage.getByKeys = function (params) {
+CustomLocalStorage.getByKeys = function (keys) {
     var storage, result, value;
 
     storage = window.localStorage;
     result = [];
 
-    for (var i = 0; i < params.keys.length; i++) {
+    for (var i = 0; i < keys.length; i++) {
         try {
-            value = storage.getItem(params.keys[i]);
+            value = storage.getItem(keys[i]);
         } catch (e) {
             value = null;
         }
@@ -24,9 +24,9 @@ CustomLocalStorage.getByKeys = function (params) {
 
 }
 
-CustomLocalStorage.removeByKeys = function (params) {
-    for (var i = 0; i < params.keys.length; i++) {
-        window.localStorage.removeItem(params.keys)
+CustomLocalStorage.removeByKeys = function (keys) {
+    for (var i = 0; i < keys.length; i++) {
+        window.localStorage.removeItem(keys)
     }
 }
 
