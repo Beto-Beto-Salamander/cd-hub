@@ -1,4 +1,3 @@
-
 import createGuest from "cross-domain-storage/guest";
 import createHost from "cross-domain-storage/host";
 
